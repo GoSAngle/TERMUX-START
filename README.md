@@ -5,9 +5,9 @@ Bash Script for Termux.
 
 1- git clone https://github.com/GoSAngle/TERMUX-START.git
 
-cd TERMUX-START
+2- cd TERMUX-START
 
-2- type "chmod +x Loader.sh"
+3- type "chmod +x Loader.sh"
 
 4- type " bash Loader.sh"
 
