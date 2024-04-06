@@ -3,7 +3,7 @@ Bash Script for Termux.
 
 # How To Execute.
 
-1- <git clone https://github.com/GoSAngle/TERMUX-START.git>
+1- git clone https://github.com/GoSAngle/TERMUX-START.git
 
 cd TERMUX-START
 
