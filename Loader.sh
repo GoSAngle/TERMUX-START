@@ -20,7 +20,7 @@ clear;echo "Done!"
 
 clear
 
-echo "               Script 0.1 | Make By GoSAngle"
+echo "               Script 0.1 | Make By GoSAngle";echo 
 
 echo "Apt Version Now.."
 
@@ -100,10 +100,41 @@ echo "> Upgrading PKG..."
 
 pkg upgrade -y > /dev/null 2>&1
 
+clear
+
+echo "          Script 0.1 | Make By GoSAngle"
+
 echo 
+
+read -p "You Want To Install Python And Python2? (Y/n):" pythonrequest
+if [[ "$pythonrequest" = "Y" || "$pythonrequest" = "y" ]]; then
+  echo "Downloading Python..";echo ;echo "Please Wait..."
+  pkg install python > /dev/null 2>&1 && pkg install python2 > /dev/null 2>&1
+ elif [[ "$pythonrequest" = "N" || "$pythonrequest" = "n" ]]; then
+   echo ;echo "Ok i Got It." && sleep 3
+ else
+ echo && echo "Incorrect. Please Try Again.."
+fi
+
+sleep 5
+
+clear;echo "          Script 0.1 | Make By GoSAngle.";echo ;sleep 3
+read -p "You want install vim editor? (Y/n):" vimeditor
+echo 
+
+if [[ "$vimeditor" = "Y" || "$vimeditor" = "y" ]]; then
+  echo ;echo "Downloading Vim.." && echo ;echo "Please Wait. ."
+  pkg install vim -y > /dev/null 2>&1
+fi && echo 
 
 echo "Cleaning Screen..."
 
 sleep 5
 
-clear;echo "APT Updated and upgraded, PKG updated and Upgraded, x11-repo Installed";echo ;echo "Type termux-change-repo to change the repo.";echo  ;echo "Done! ;)."
+clear;echo "APT Updated and upgraded, PKG updated and Upgraded, x11-repo Installed, , Vim Installed, Python Installed.";echo ;echo "Type termux-change-repo to change the repo.";echo  
+echo "commands:";echo ;echo "pip to install libs python, pip install geopy".;echo 
+echo "How to use vim?.";echo  && echo "'vim bye.sh, .py .html etc.'";echo ;echo "How to edit a file in vim?
+";echo ;echo "Type 'vim name_of_file.sh, py , html etc.";echo 
+echo "How use python?"echo ;
+echo "Use python with ' python ' or vim file.py 'python extension is .py'";echo "How to clear?";echo ;echo "use 'clear' to clear te screen.
+"
